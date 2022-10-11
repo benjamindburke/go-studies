@@ -14,11 +14,11 @@ const (
 )
 
 const (
-	AbsoluteZeroC Celsius = KToC(AbsoluteZeroK)
-	FreezingC			Celsius = KToC(FreezingK)
-	BoilingC			Celsius = KToC(BoilingK)
+	AbsoluteZeroC Celsius = -273.15
+	FreezingC			Celsius = 0
+	BoilingC			Celsius = 100
 )
 
-func (k Kelvin) String() string 		{ return fmt.Sprintf("%g°K") }
-func (c Celsius) String() string		{ return fmt.Sprintf("%g°C") }
-func (f Fahrenheit) String() string { return fmt.Sprintf("%g°F") }
+func (k Kelvin) String() string 		{ return fmt.Sprintf("%.5g°K", k) }
+func (c Celsius) String() string		{ return fmt.Sprintf("%.5g°C", c) }
+func (f Fahrenheit) String() string { return fmt.Sprintf("%.5g°F", f) }
