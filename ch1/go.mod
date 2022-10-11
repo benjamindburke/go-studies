@@ -1,3 +1,3 @@
-module test.io/code/ch1
+module github.com/benjamindburke/go-studies/ch1
 
 go 1.19
