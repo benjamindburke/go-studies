@@ -3,9 +3,9 @@ package main
 
 import (
 	"fmt"
+	"github.com/benjamindburke/go-studies/ch2/popcount"
 	"os"
 	"strconv"
-	"github.com/benjamindburke/go-studies/ch2/popcount"
 )
 
 func main() {
